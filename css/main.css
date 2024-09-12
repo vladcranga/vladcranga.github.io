@@ -145,35 +145,31 @@ a.access
     grid-template-rows: 115px 100px;
 }
 
-.grid-projects
-{
+.grid-projects {
     display: grid;
     justify-content: center;
     align-content: center;
-    grid-template-columns: repeat(4, 200px);
-    grid-template-rows: minmax(110px, auto) repeat(2, auto);
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 10px;
 }
 
-.grid-projects img
-{
+.grid-projects img {
     width: 100%;
-    height: 70%;
-    object-fit: fill;
+    height: auto;
+    object-fit: contain;
+    max-width: 100%;
 }
 
-.grid-projects-container
-{
+.grid-projects-container {
     border: 1px solid bisque;
-    margin-right: 5px;
-    margin-bottom: 10px;
+    padding: 10px;
 }
 
-.grid-projects-bigger
-{
+.grid-projects-bigger {
     border: 1px solid bisque;
-    margin-right: 5px;
-    margin-bottom: 10px;
-    grid-column: span 3;
+    padding: 10px;
+    grid-column: span 2; 
+    max-width: 400px;
 }
 
 /* media rules for wider screens */
