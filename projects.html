@@ -5,105 +5,132 @@
     <meta name="author" content="Vlad Mihai Cranga">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Projects - Vlad M. Cranga</title>
-    <link rel="stylesheet" href="css/main.css">
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="icon" href="attachments/icon-skills.png">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    animation: {
+                        fadeIn: "fadeIn 2s ease-in-out",
+                    },
+                    keyframes: {
+                        fadeIn: {
+                            from: { opacity: "0" },
+                            to: { opacity: "1" },
+                        },
+                    },
+                },
+            },
+        };
+    </script>
 </head>
-<body>
-    <!--site title -->
-    <header>
-        <h1>Vlad M. Cranga</h1>
+<body class="bg-gray-900 text-gray-100">
+    <!-- Header -->
+    <header class="bg-gradient-to-r from-blue-900 via-purple-700 to-blue-500 py-6 text-center shadow-lg">
+        <h1 class="text-4xl font-bold text-white tracking-wide">Vlad M. Cranga</h1>
     </header>
-    <!--responsive navigation bar-->
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href ="projects.html">Projects</a></li>
-			<li><a href="contact.html">Contact</a></li>
+
+    <!-- Navigation Bar -->
+    <nav class="bg-gray-800 shadow-md border-b border-gray-700">
+        <ul class="flex justify-center space-x-6 py-4">
+            <li><a href="index.html" class="text-gray-300 hover:text-green-400 transition duration-300">Home</a></li>
+            <li><a href="projects.html" class="text-gray-300 hover:text-green-400 transition duration-300">Projects</a></li>
+            <li><a href="contact.html" class="text-gray-300 hover:text-green-400 transition duration-300">Contact</a></li>
         </ul>
     </nav>
-    <!--main content area -->
-    <main>
-        <h1 class="welcome">Projects</h1>
 
-        <p class="information">All these projects can be found on my 
-            <a href="https://github.com/vladcranga" target="_blank" class="access">GitHub</a> profile.
+    <!-- Projects -->
+    <main class="container mx-auto px-6 py-12 animate-fadeIn">
+        <h1 class="text-3xl font-extrabold tracking-wide text-center mb-8">Projects</h1>
+        <p class="text-center text-lg font-medium mb-12">
+            All these projects can be found on my 
+            <a href="https://github.com/vladcranga" target="_blank" class="text-green-400 hover:underline">
+                GitHub
+            </a> profile.
         </p>
-    
-        <div class="grid-projects">
 
-            <div class="grid-projects-container">
-                <p class="information">
-                    <a href="https://github.com/vladcranga/react-calculator" target="_blank" class="access">
-                        React Calculator
-                    </a>
-                </p>
-                <img src="attachments/calculator.png" alt="A picture of a React calculator.">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+            <div class="bg-gray-800 rounded-lg shadow-lg hover:shadow-xl transition duration-300">
+                <a href="https://github.com/vladcranga/java-currency" target="_blank">
+                    <img src="attachments/currency.png" 
+                         alt="Java Currency Converter" 
+                         class="h-85 w-full object-cover rounded-t-lg">
+                    <div class="p-4">
+                        <h3 class="text-xl font-bold text-green-400">Java Currency Converter</h3>
+                        <p class="text-gray-400 text-sm mt-2">
+                            A full-stack Java and React app that does currency conversion. 
+                        </p>
+                    </div>
+                </a>
             </div>
 
-            <div class="grid-projects-bigger">
-                <p class="information">
-                    <a href="https://github.com/vladcranga/flask-asr-tool" target="_blank" class="access">
-                        Flask Automatic Speech Recogniser
-                    </a>
-                </p>
-                <img src="attachments/asr-tool.png" alt="A picture of the Automatic Speech Recogniser Tool web interface.">
+            <div class="bg-gray-800 rounded-lg shadow-lg hover:shadow-xl transition duration-300">
+                <a href="https://github.com/vladcranga/react-calculator" target="_blank">
+                    <img src="attachments/calculator.png" alt="React Calculator" class="rounded-t-lg">
+                    <div class="p-4">
+                        <h3 class="text-xl font-bold text-green-400">React Calculator</h3>
+                        <p class="text-gray-400 text-sm mt-2">
+                            A React calculator with an AWS Lambda backend. 
+                        </p>
+                    </div>
+                </a>
             </div>
 
-            <div class="grid-projects-bigger">
-                <p class="information">
-                    <a href="https://github.com/vladcranga/COM1001---Semester-2-Project"
-                      target="_blank" class="access">
-                        Ruby E-Mentor Web App
-                    </a>
-                </p>
-                <img src="attachments/mentor-ruby.png" alt="A picture of a ruby E-Mentor web app.">
+            <div class="bg-gray-800 rounded-lg shadow-lg hover:shadow-xl transition duration-300">
+                <a href="https://github.com/vladcranga/flask-asr-tool" target="_blank">
+                    <img src="attachments/asr-tool.png" alt="Flask Automatic Speech Recogniser" class="rounded-t-lg">
+                    <div class="p-4">
+                        <h3 class="text-xl font-bold text-green-400">Flask Automatic Speech Recogniser</h3>
+                        <p class="text-gray-400 text-sm mt-2">
+                            A web application for automatic speech recognition, built with Flask.
+                        </p>
+                    </div>
+                </a>
             </div>
 
-            <div class="grid-projects-container">
-                <p class="information">
-                    <a href="https://github.com/vladcranga/SeshWebsite/commits/master/?author=vladcranga"
-                      target="_blank" class="access">
-                        Society Website Contributions
-                    </a>
-                </p>
-                <img src="attachments/society.png" alt="A picture of my card on the committee page.">
+            <div class="bg-gray-800 rounded-lg shadow-lg hover:shadow-xl transition duration-300">
+                <a href="https://github.com/vladcranga/python-weather" target="_blank">
+                    <img src="attachments/weather.png" alt="Python Weather App" class="rounded-t-lg">
+                    <div class="p-4">
+                        <h3 class="text-xl font-bold text-green-400">Python Weather App</h3>
+                        <p class="text-gray-400 text-sm mt-2">
+                            A weather forecasting application using Python and an API to display data.
+                        </p>
+                    </div>
+                </a>
             </div>
 
-            <div class="grid-projects-bigger">
-                <p class="information">
-                    <a href="https://github.com/vladcranga/python-weather"
-                      target="_blank" class="access">
-                        Python Weather App
-                    </a>
-                </p>
-                <img src="attachments/weather.png" alt="A picture of a Python weather app.">
+            <div class="bg-gray-800 rounded-lg shadow-lg hover:shadow-xl transition duration-300">
+                <a href="https://github.com/vladcranga/COM1001---Semester-2-Project" target="_blank">
+                    <img src="attachments/mentor-ruby.png" alt="Ruby E-Mentor Web App" class="rounded-t-lg">
+                    <div class="p-4">
+                        <h3 class="text-xl font-bold text-green-400">Ruby E-Mentor Web App</h3>
+                        <p class="text-gray-400 text-sm mt-2">
+                            A web application developed in Ruby to connect mentors and mentees efficiently.
+                        </p>
+                    </div>
+                </a>
             </div>
 
-            <div class="grid-projects-bigger">
-                <p class="information">
-                    <a href="https://github.com/vladcranga/java-currency"
-                      target="_blank" class="access">
-                        Java Currency Converter  
-                    </a>
-                </p>
-                <img src="attachments/currency.png" alt="A picture of a Java currency converter.">
+            <div class="bg-gray-800 rounded-lg shadow-lg hover:shadow-xl transition duration-300">
+                <a href="https://github.com/vladcranga/SeshWebsite/commits/master/?author=vladcranga" target="_blank">
+                    <img src="attachments/society.png" alt="Society Website Contributions" class="rounded-t-lg">
+                    <div class="p-4">
+                        <h3 class="text-xl font-bold text-green-400">Society Website Contributions</h3>
+                        <p class="text-gray-400 text-sm mt-2">
+                            Contributions to a student society's website as part of the committee.
+                        </p>
+                    </div>
+                </a>
             </div>
-
-            <div class="grid-projects-bigger">
-                <p class="information">
-                    <a href="https://github.com/vladcranga/ulhacks-hackaton" target="_blank" class="access">
-                        Hackaton Educational Project
-                    </a>
-                </p>
-                <img src="attachments/ulhacks.png" alt="A picture of a hackaton educational website.">
-            </div>
-
-
         </div>
     </main>
-    <!--footer-->
-    <footer>
-        <p class="disclaimer">&copy; Vlad M. Cranga, 2024</p>
+
+    <!-- Footer -->
+    <footer class="mt-10 bg-gray-800 text-gray-400 text-center py-6 border-t border-gray-700">
+        <p>&copy; Vlad M. Cranga, 2024</p>
     </footer>
 </body>
 </html>
