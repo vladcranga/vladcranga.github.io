@@ -5,35 +5,69 @@
     <meta name="author" content="Vlad Mihai Cranga">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Contact - Vlad M. Cranga</title>
-    <link rel="stylesheet" href="css/main.css">
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="icon" href="attachments/icon-contact.png">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    animation: {
+                        fadeIn: "fadeIn 2s ease-in-out",
+                    },
+                    keyframes: {
+                        fadeIn: {
+                            from: { opacity: "0" },
+                            to: { opacity: "1" },
+                        },
+                    },
+                },
+            },
+        };
+    </script>
 </head>
-<body>
-    <!--site title -->
-    <header>
-        <h1>Vlad M. Cranga</h1>
+<body class="bg-gray-900 text-gray-100">
+    <!-- Header -->
+    <header class="bg-gradient-to-r from-blue-900 via-purple-700 to-blue-500 py-6 text-center shadow-lg">
+        <h1 class="text-4xl font-bold text-white tracking-wide">Vlad M. Cranga</h1>
     </header>
-    <!--responsive navigation bar-->
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href ="projects.html">Projects</a></li>
-			<li><a href="contact.html">Contact</a></li>
+
+    <!-- Navigation Bar -->
+    <nav class="bg-gray-800 shadow-md border-b border-gray-700">
+        <ul class="flex justify-center space-x-6 py-4">
+            <li><a href="index.html" class="text-gray-300 hover:text-green-400 transition duration-300">Home</a></li>
+            <li><a href="projects.html" class="text-gray-300 hover:text-green-400 transition duration-300">Projects</a></li>
+            <li><a href="contact.html" class="text-gray-300 hover:text-green-400 transition duration-300">Contact</a></li>
         </ul>
     </nav>
-    <!--main content area -->
-    <main>
-        <h1 class="welcome">Contact me</h1>
-        <p class="information">If you wish to contact me, you can find me on 
-            <a class="access" href="https://www.linkedin.com/in/vlad-m-cranga-022775210/" 
-              target="_blank">LinkedIn</a>.
+
+    <!-- Contact -->
+    <main class="container mx-auto px-6 py-12 animate-fadeIn">
+        <h1 class="text-3xl font-extrabold tracking-wide text-center mb-8">Contact Me</h1>
+        <p class="text-center text-lg font-medium mb-12">
+            If you wish to contact me, you can find me on 
+            <a href="https://www.linkedin.com/in/vlad-m-cranga-022775210/" 
+               target="_blank" 
+               class="text-green-400 hover:underline">
+               LinkedIn
+            </a>.
         </p>
-        <img class = "me" src = "attachments/linkedin_header.png" alt = "A picture of my LinkedIn profile header" 
-          title = "A picture of my LinkedIn profile header">
-    </main>
-    <!--footer-->
-    <footer>
-        <p class="disclaimer">&copy; Vlad M. Cranga, 2024</p>
+    
+        <!-- Centering the Image Properly -->
+        <div class="flex justify-center items-center">
+            <a href="https://www.linkedin.com/in/vlad-m-cranga-022775210/" target="_blank">
+                <img 
+                    src="attachments/linkedin_header.png" 
+                    alt="LinkedIn profile header" 
+                    title="LinkedIn profile header"
+                    class="rounded-lg shadow-lg hover:shadow-xl transition duration-300 w-full max-w-2xl"
+                >
+            </a>
+        </div>
+    </main>    
+
+    <!-- Footer -->
+    <footer class="mt-10 bg-gray-800 text-gray-400 text-center py-6 border-t border-gray-700">
+        <p>&copy; Vlad M. Cranga, 2024</p>
     </footer>
 </body>
 </html>
