@@ -10,3 +10,8 @@
 #### Technologies
 - HTML
 - Tailwind CSS
+- JavaScript
+- Three.js (3D graphics)
+
+#### Credits
+- Skill icons provided by [DevIcon](https://devicon.dev)
