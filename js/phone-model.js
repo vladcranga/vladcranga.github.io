@@ -22,7 +22,6 @@ window.addEventListener('load', () => {
         camera.aspect = width / height;
         camera.updateProjectionMatrix();
         renderer.setSize(width, height);
-        labelRenderer.setSize(width, height);
         
         // Responsive scaling based on screen size
         let scale = 1;
@@ -30,6 +29,10 @@ window.addEventListener('load', () => {
         if (window.innerWidth <= 400) {  // Very small screens
             scale = 0.6;
             cameraZ = 6;
+          // Medium phones or high pixel ratio devices
+        } else if (window.innerWidth <= 440 || window.devicePixelRatio >= 3) {
+            scale = 0.65;
+            cameraZ = 5.5;
         } else if (window.innerWidth < 768) {  // Regular mobile
             scale = 0.7;
             cameraZ = 5;
@@ -141,7 +144,6 @@ window.addEventListener('load', () => {
         
         controls.update();
         renderer.render(scene, camera);
-        labelRenderer.render(scene, camera);
     }
 
     animate();
