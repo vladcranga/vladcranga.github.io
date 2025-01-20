@@ -128,6 +128,7 @@ window.addEventListener('load', () => {
         { name: 'C#', icon: 'devicon-csharp-line-wordmark', orbit: 2 },
         { name: 'Linux', icon: 'devicon-linux-plain', orbit: 0 },
         { name: 'Docker', icon: 'devicon-docker-plain colored', orbit: 1 },
+        { name: 'MongoDB', icon: 'devicon-mongodb-plain colored', orbit: 2 },
     ];
 
     skillsData.forEach((skill, index) => {
