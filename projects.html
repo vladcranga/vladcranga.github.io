@@ -1,238 +1,311 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="utf-8" />
-    <meta name="author" content="Vlad Mihai Cranga">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Vlad Mihai Cranga" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Projects - Vlad M. Cranga</title>
-    <link href="./output.css" rel="stylesheet">
-    <link rel="icon" href="attachments/icon-skills.png">
+    <link href="./output.css" rel="stylesheet" />
+    <link rel="icon" href="attachments/icon-skills.png" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-</head>
+  </head>
 
-<body class="bg-gray-900 text-gray-100">
+  <body class="bg-gray-900 text-gray-100">
     <!-- Header -->
-    <header class="bg-gradient-to-r from-blue-900 via-purple-700 to-blue-500 py-4 text-center shadow-lg">
+    <header
+      class="bg-gradient-to-r from-blue-900 via-purple-700 to-blue-500 py-4 text-center shadow-lg"
+    >
       <h1 class="text-3xl font-bold text-white tracking-wide">Vlad M. Cranga</h1>
     </header>
 
     <!-- Navigation Bar -->
     <nav class="bg-gray-800 shadow-md border-b border-gray-700">
       <ul class="flex justify-center space-x-6 py-4 text-lg">
-          <li><a href="index.html" class="text-gray-300 hover:text-green-400 transition duration-300">Home</a></li>
-          <li><a href="projects.html" class="text-gray-300 hover:text-green-400 transition duration-300">Projects</a>
-          </li>
-          <li><a href="contact.html" class="text-gray-300 hover:text-green-400 transition duration-300">Contact</a>
-          </li>
+        <li>
+          <a href="index.html" class="text-gray-300 hover:text-green-400 transition duration-300"
+            >Home</a
+          >
+        </li>
+        <li>
+          <a href="projects.html" class="text-gray-300 hover:text-green-400 transition duration-300"
+            >Projects</a
+          >
+        </li>
+        <li>
+          <a href="contact.html" class="text-gray-300 hover:text-green-400 transition duration-300"
+            >Contact</a
+          >
+        </li>
       </ul>
     </nav>
 
     <!-- Projects -->
     <main class="container mx-auto px-6 py-12 animate-fadeIn">
-        <h1 class="text-3xl font-extrabold tracking-wide text-center mb-8">Projects</h1>
-        <p class="text-center text-lg font-medium mb-12">
-            All these projects can be found on my
-            <a href="https://github.com/vladcranga" target="_blank" class="text-green-400 hover:underline">
-                GitHub
-            </a> profile.
-        </p>
+      <h1 class="text-3xl font-extrabold tracking-wide text-center mb-8">Projects</h1>
+      <p class="text-center text-lg font-medium mb-12">
+        All these projects can be found on my
+        <a
+          href="https://github.com/vladcranga"
+          target="_blank"
+          class="text-green-400 hover:underline"
+        >
+          GitHub
+        </a>
+        profile.
+      </p>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div class="bg-gray-800 rounded-lg shadow-lg hover:shadow-xl transition duration-400">
-                <a href="https://github.com/vladcranga/expense-wise" target="_blank">
-                    <div class="swiper mySwiper aspect-[4/3] rounded-t-lg overflow-hidden">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <img src="attachments/expensewise-index.png" alt="ExpenseWise Index"
-                                    class="w-full h-full object-contain">
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="attachments/expensewise-chart.png" alt="ExpenseWise Chart"
-                                    class="w-full h-full object-contain">
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="attachments/expensewise-converter.png" alt="ExpenseWise Currency Converter"
-                                    class="w-full h-full object-contain">
-                            </div>
-                        </div>
-                        <div class="swiper-pagination"></div>
-                    </div>
-                    <div class="p-4">
-                        <h3 class="text-xl font-bold text-green-400">ExpenseWise</h3>
-                        <p class="text-gray-400 text-base mt-2">
-                            A full-stack personal budget tracker built with React and Spring Boot, featuring expense
-                            tracking, data visualisation, and currency conversion.
-                        </p>
-                    </div>
-                </a>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="bg-gray-800 rounded-lg shadow-lg hover:shadow-xl transition duration-400">
+          <a href="https://github.com/vladcranga/expense-wise" target="_blank">
+            <div class="swiper mySwiper aspect-[4/3] rounded-t-lg overflow-hidden">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img
+                    src="attachments/expensewise-index.png"
+                    alt="ExpenseWise Index"
+                    class="w-full h-full object-contain"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="attachments/expensewise-chart.png"
+                    alt="ExpenseWise Chart"
+                    class="w-full h-full object-contain"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="attachments/expensewise-converter.png"
+                    alt="ExpenseWise Currency Converter"
+                    class="w-full h-full object-contain"
+                  />
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
             </div>
-
-            <div class="bg-gray-800 rounded-lg shadow-lg hover:shadow-xl transition duration-400">
-                <a href="https://github.com/vladcranga/ecommerce-game" target="_blank">
-                    <div class="swiper mySwiper aspect-[4/3] rounded-t-lg overflow-hidden">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <img src="attachments/game_64.png" alt="Ecommerce Game 64"
-                                    class="w-full h-full object-contain">
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="attachments/player_stats.png" alt="Ecommerce Player Stats"
-                                    class="w-full h-full object-contain">
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="attachments/store_item.png" alt="Ecommerce Store Item"
-                                    class="w-full h-full object-contain">
-                            </div>
-                        </div>
-                        <div class="swiper-pagination"></div>
-                    </div>
-                    <div class="p-4">
-                        <h3 class="text-xl font-bold text-green-400">Fantasy Ecommerce Store</h3>
-                        <p class="text-gray-400 text-base mt-2">
-                             A gamified full-stack ecommerce website with minigames and coins made using the MERN stack.
-                        </p>
-                    </div>
-                </a>
-            </div>            
- 
-            <div class="bg-gray-800 rounded-lg shadow-lg hover:shadow-xl transition duration-400">
-                <a href="https://github.com/vladcranga/healthcare-email-scanner" target="_blank">
-                    <div class="swiper mySwiper aspect-[4/3] rounded-t-lg overflow-hidden">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <img src="attachments/healthcare-stats.png" alt="MedFilter Statistics"
-                                    class="w-full h-full object-contain">
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="attachments/healthcare-email.png" alt="MedFilter Sample Email"
-                                    class="w-full h-full object-contain">
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="attachments/healthcare-warning.png" alt="MedFilter Warning"
-                                    class="w-full h-full object-contain">
-                            </div>
-                        </div>
-                        <div class="swiper-pagination"></div>
-                    </div>
-                    <div class="p-4">
-                        <h3 class="text-xl font-bold text-green-400">MedFilter AI</h3>
-                        <p class="text-gray-400 text-base mt-2">
-                            A full-stack AI-powered email filter built with React and Django, designed to scan and
-                            classify email communications in the context of healthcare to prevent cyberthreats.
-                        </p>
-                    </div>
-                </a>
+            <div class="p-4">
+              <h3 class="text-xl font-bold text-green-400">ExpenseWise</h3>
+              <p class="text-gray-400 text-base mt-2">
+                A full-stack personal budget tracker built with React and Spring Boot, featuring
+                expense tracking, data visualisation, and currency conversion.
+              </p>
             </div>
-
-            <div class="bg-gray-800 rounded-lg shadow-lg hover:shadow-xl transition duration-400">
-                <a href="https://github.com/vladcranga/flask-asr-tool" target="_blank">
-                    <div class="swiper mySwiper aspect-[4/3] rounded-t-lg overflow-hidden">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <img src="attachments/asr-tool.png" alt="Automatic Speech Recogniser Interface"
-                                    class="w-full h-full object-contain">
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="attachments/asr-buttons.png" alt="Automatic Speech Recogniser Buttons"
-                                    class="w-full h-full object-contain">
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="attachments/asr-files.png" alt="Automatic Speech Recogniser Files"
-                                    class="w-full h-full object-contain">
-                            </div>
-                        </div>
-                        <div class="swiper-pagination"></div>
-                    </div>
-                    <div class="p-4">
-                        <h3 class="text-xl font-bold text-green-400">Automatic Speech Recogniser</h3>
-                        <p class="text-gray-400 text-base mt-2">
-                            A user-friendly web application for recording, transcribing, and analysing speech
-                            data, built with Flask.
-                        </p>
-                    </div>
-                </a>
-            </div>
-
-            <div class="bg-gray-800 rounded-lg shadow-lg hover:shadow-xl transition duration-300">
-                <a href="https://github.com/vladcranga/retro-system-monitor" target="_blank">
-                    <img src="attachments/retro-monitor.png" alt="Retro System Monitor" class="rounded-t-lg">
-                    <div class="p-4">
-                        <h3 class="text-xl font-bold text-green-400">Retro System Monitor</h3>
-                        <p class="text-gray-400 text-base mt-2">
-                            A retro terminal-based Linux system monitor written in C++.
-                        </p>
-                    </div>
-                </a>
-            </div>
-
-            <div class="bg-gray-800 rounded-lg shadow-lg hover:shadow-xl transition duration-300">
-                <a href="https://github.com/vladcranga/react-calculator" target="_blank">
-                    <img src="attachments/calculator.png" alt="React Calculator" class="rounded-t-lg">
-                    <div class="p-4">
-                        <h3 class="text-xl font-bold text-green-400">React Calculator</h3>
-                        <p class="text-gray-400 text-base mt-2">
-                            A React calculator with an AWS Lambda backend.
-                        </p>
-                    </div>
-                </a>
-            </div>
-
-            <div class="bg-gray-800 rounded-lg shadow-lg hover:shadow-xl transition duration-300">
-                <a href="https://github.com/vladcranga/python-weather" target="_blank">
-                    <img src="attachments/weather.png" alt="Python Weather App" class="rounded-t-lg">
-                    <div class="p-4">
-                        <h3 class="text-xl font-bold text-green-400">Python Weather App</h3>
-                        <p class="text-gray-400 text-base mt-2">
-                            A weather forecasting application using Python and an API to display data.
-                        </p>
-                    </div>
-                </a>
-            </div>
-
-            <div class="bg-gray-800 rounded-lg shadow-lg hover:shadow-xl transition duration-300">
-                <a href="https://github.com/vladcranga/COM1001---Semester-2-Project" target="_blank">
-                    <img src="attachments/mentor-ruby.png" alt="Ruby E-Mentor Web App" class="rounded-t-lg">
-                    <div class="p-4">
-                        <h3 class="text-xl font-bold text-green-400">Ruby E-Mentor Web App</h3>
-                        <p class="text-gray-400 text-base mt-2">
-                            A web application developed in Ruby to connect mentors and mentees efficiently.
-                        </p>
-                    </div>
-                </a>
-            </div>
-
-            <div class="bg-gray-800 rounded-lg shadow-lg hover:shadow-xl transition duration-300">
-                <a href="https://github.com/vladcranga/SeshWebsite/commits/master/?author=vladcranga" target="_blank">
-                    <img src="attachments/society.png" alt="Society Website Contributions" class="rounded-t-lg">
-                    <div class="p-4">
-                        <h3 class="text-xl font-bold text-green-400">Society Website Contributions</h3>
-                        <p class="text-gray-400 text-base mt-2">
-                            Contributions to a student society's website as part of the committee.
-                        </p>
-                    </div>
-                </a>
-            </div>
+          </a>
         </div>
+
+        <div class="bg-gray-800 rounded-lg shadow-lg hover:shadow-xl transition duration-400">
+          <a href="https://github.com/vladcranga/ecommerce-game" target="_blank">
+            <div class="swiper mySwiper aspect-[4/3] rounded-t-lg overflow-hidden">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img
+                    src="attachments/game_64.png"
+                    alt="Ecommerce Game 64"
+                    class="w-full h-full object-contain"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="attachments/player_stats.png"
+                    alt="Ecommerce Player Stats"
+                    class="w-full h-full object-contain"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="attachments/store_item.png"
+                    alt="Ecommerce Store Item"
+                    class="w-full h-full object-contain"
+                  />
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+            <div class="p-4">
+              <h3 class="text-xl font-bold text-green-400">Fantasy Ecommerce Store</h3>
+              <p class="text-gray-400 text-base mt-2">
+                A gamified full-stack ecommerce website with minigames and coins made using the MERN
+                stack.
+              </p>
+            </div>
+          </a>
+        </div>
+
+        <div class="bg-gray-800 rounded-lg shadow-lg hover:shadow-xl transition duration-400">
+          <a href="https://github.com/vladcranga/healthcare-email-scanner" target="_blank">
+            <div class="swiper mySwiper aspect-[4/3] rounded-t-lg overflow-hidden">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img
+                    src="attachments/healthcare-stats.png"
+                    alt="MedFilter Statistics"
+                    class="w-full h-full object-contain"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="attachments/healthcare-email.png"
+                    alt="MedFilter Sample Email"
+                    class="w-full h-full object-contain"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="attachments/healthcare-warning.png"
+                    alt="MedFilter Warning"
+                    class="w-full h-full object-contain"
+                  />
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+            <div class="p-4">
+              <h3 class="text-xl font-bold text-green-400">MedFilter AI</h3>
+              <p class="text-gray-400 text-base mt-2">
+                A full-stack AI-powered email filter built with React and Django, designed to scan
+                and classify email communications in the context of healthcare to prevent
+                cyberthreats.
+              </p>
+            </div>
+          </a>
+        </div>
+
+        <div class="bg-gray-800 rounded-lg shadow-lg hover:shadow-xl transition duration-400">
+          <a href="https://github.com/vladcranga/flask-asr-tool" target="_blank">
+            <div class="swiper mySwiper aspect-[4/3] rounded-t-lg overflow-hidden">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img
+                    src="attachments/asr-tool.png"
+                    alt="Automatic Speech Recogniser Interface"
+                    class="w-full h-full object-contain"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="attachments/asr-buttons.png"
+                    alt="Automatic Speech Recogniser Buttons"
+                    class="w-full h-full object-contain"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="attachments/asr-files.png"
+                    alt="Automatic Speech Recogniser Files"
+                    class="w-full h-full object-contain"
+                  />
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+            <div class="p-4">
+              <h3 class="text-xl font-bold text-green-400">Automatic Speech Recogniser</h3>
+              <p class="text-gray-400 text-base mt-2">
+                A user-friendly web application for recording, transcribing, and analysing speech
+                data, built with Flask.
+              </p>
+            </div>
+          </a>
+        </div>
+
+        <div class="bg-gray-800 rounded-lg shadow-lg hover:shadow-xl transition duration-300">
+          <a href="https://github.com/vladcranga/retro-system-monitor" target="_blank">
+            <img
+              src="attachments/retro-monitor.png"
+              alt="Retro System Monitor"
+              class="rounded-t-lg"
+            />
+            <div class="p-4">
+              <h3 class="text-xl font-bold text-green-400">Retro System Monitor</h3>
+              <p class="text-gray-400 text-base mt-2">
+                A retro terminal-based Linux system monitor written in C++.
+              </p>
+            </div>
+          </a>
+        </div>
+
+        <div class="bg-gray-800 rounded-lg shadow-lg hover:shadow-xl transition duration-300">
+          <a href="https://github.com/vladcranga/react-calculator" target="_blank">
+            <img src="attachments/calculator.png" alt="React Calculator" class="rounded-t-lg" />
+            <div class="p-4">
+              <h3 class="text-xl font-bold text-green-400">React Calculator</h3>
+              <p class="text-gray-400 text-base mt-2">
+                A React calculator with an AWS Lambda backend.
+              </p>
+            </div>
+          </a>
+        </div>
+
+        <div class="bg-gray-800 rounded-lg shadow-lg hover:shadow-xl transition duration-300">
+          <a href="https://github.com/vladcranga/python-weather" target="_blank">
+            <img src="attachments/weather.png" alt="Python Weather App" class="rounded-t-lg" />
+            <div class="p-4">
+              <h3 class="text-xl font-bold text-green-400">Python Weather App</h3>
+              <p class="text-gray-400 text-base mt-2">
+                A weather forecasting application using Python and an API to display data.
+              </p>
+            </div>
+          </a>
+        </div>
+
+        <div class="bg-gray-800 rounded-lg shadow-lg hover:shadow-xl transition duration-300">
+          <a href="https://github.com/vladcranga/COM1001---Semester-2-Project" target="_blank">
+            <img
+              src="attachments/mentor-ruby.png"
+              alt="Ruby E-Mentor Web App"
+              class="rounded-t-lg"
+            />
+            <div class="p-4">
+              <h3 class="text-xl font-bold text-green-400">Ruby E-Mentor Web App</h3>
+              <p class="text-gray-400 text-base mt-2">
+                A web application developed in Ruby to connect mentors and mentees efficiently.
+              </p>
+            </div>
+          </a>
+        </div>
+
+        <div class="bg-gray-800 rounded-lg shadow-lg hover:shadow-xl transition duration-300">
+          <a
+            href="https://github.com/vladcranga/SeshWebsite/commits/master/?author=vladcranga"
+            target="_blank"
+          >
+            <img
+              src="attachments/society.png"
+              alt="Society Website Contributions"
+              class="rounded-t-lg"
+            />
+            <div class="p-4">
+              <h3 class="text-xl font-bold text-green-400">Society Website Contributions</h3>
+              <p class="text-gray-400 text-base mt-2">
+                Contributions to a student society's website as part of the committee.
+              </p>
+            </div>
+          </a>
+        </div>
+      </div>
     </main>
 
     <!-- Footer -->
     <footer class="mt-10 bg-gray-800 text-gray-400 text-center py-6 border-t border-gray-700">
-        <p>&copy; Vlad M. Cranga, <script>document.write(new Date().getFullYear())</script></p>
+      <p>
+        &copy; Vlad M. Cranga,
+        <script>
+          document.write(new Date().getFullYear());
+        </script>
+      </p>
     </footer>
     <script>
-        var swiper = new Swiper(".mySwiper", {
-            pagination: {
-                el: ".swiper-pagination",
-                dynamicBullets: true,
-            },
-            autoplay: {
-                delay: 3000,
-                disableOnInteraction: false,
-            },
-        });
+      var swiper = new Swiper('.mySwiper', {
+        pagination: {
+          el: '.swiper-pagination',
+          dynamicBullets: true,
+        },
+        autoplay: {
+          delay: 3000,
+          disableOnInteraction: false,
+        },
+      });
     </script>
-</body>
-
+  </body>
 </html>
