@@ -23,6 +23,7 @@ window.addEventListener('load', () => {
 
     renderer.setSize(container.clientWidth, container.clientHeight);
     renderer.setPixelRatio(window.devicePixelRatio);
+    renderer.domElement.style.pointerEvents = 'none';  
     container.appendChild(renderer.domElement);
     container.style.position = 'relative';
 

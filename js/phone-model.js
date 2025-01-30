@@ -12,6 +12,7 @@ window.addEventListener('load', () => {
 
     renderer.setSize(container.clientWidth, container.clientHeight);
     renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+    renderer.domElement.style.pointerEvents = 'none';  
     container.appendChild(renderer.domElement);
     container.style.position = 'relative';
 
