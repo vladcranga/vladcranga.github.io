@@ -10,7 +10,8 @@
   "type": "module",
   "scripts": {
     "format": "prettier --write \"**/*.{html,js,css}\"",
+    "format:check": "prettier --check \"**/*.{html,js,css}\"",
     "lint": "eslint \"js/**/*.js\" --fix",
-    "lint-check": "eslint \"js/**/*.js\""
+    "lint:check": "eslint \"js/**/*.js\""
   }
 }
